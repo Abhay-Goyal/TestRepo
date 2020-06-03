@@ -54,7 +54,7 @@ public class AmzonmusicTest extends DriverInitialization {
 	@DataProvider
 	private Object[][] getData() {
 		Object[][] data = new Object[1][2];
-		data[0][0] = "abc@yopmail.com";
+		data[0][0] = "8699446654";
 		data[0][1] = "test123";
 		return data;
 
