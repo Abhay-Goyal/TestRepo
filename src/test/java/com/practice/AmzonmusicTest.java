@@ -43,6 +43,8 @@ public class AmzonmusicTest extends DriverInitialization {
 		if (driver.getTitle().contains("Authentication")) {
 
 			System.out.println("Authentication required in order to login");
+			System.out.println("New Change Commit");
+			
 		} else {
 			AmazonMusic am = new AmazonMusic(driver);
 			am.searchMusic().sendKeys("SidhuMooseWala");
