@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="20024" started-at="2020-06-02T06:42:41Z" finished-at="2020-06-02T06:43:01Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="20024" started-at="2020-06-02T06:42:41Z" finished-at="2020-06-02T06:43:01Z">
+      <class name="com.practice.AmzonmusicTest">
+        <test-method status="PASS" signature="searchMusic(java.lang.String, java.lang.String)[pri:0, instance:com.practice.AmzonmusicTest@3f4faf53]" name="searchMusic" duration-ms="17573" started-at="2020-06-02T12:12:41Z" data-provider="getData" finished-at="2020-06-02T12:12:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8699446624]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Aug@2018]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchMusic -->
+      </class> <!-- com.practice.AmzonmusicTest -->
+      <class name="com.practice.SpiceJetBookTest">
+        <test-method status="PASS" signature="spiceTest()[pri:0, instance:com.practice.SpiceJetBookTest@2a693f59]" name="spiceTest" duration-ms="19372" started-at="2020-06-02T12:12:41Z" finished-at="2020-06-02T12:13:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- spiceTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.practice.SpiceJetBookTest@2a693f59]" name="closeBrowser" is-config="true" duration-ms="628" started-at="2020-06-02T12:13:00Z" finished-at="2020-06-02T12:13:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.practice.SpiceJetBookTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

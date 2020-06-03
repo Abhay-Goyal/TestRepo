@@ -1,0 +1,6 @@
+12:24:19.794 [TestNG-test=Test-1] INFO  com.practice.SpiceJetBookTest - Driver is intiated
+12:24:36.642 [TestNG-test=Test-1] ERROR com.practice.SpiceJetBookTest - Round is not selected selected
+12:24:36.780 [TestNG-test=Test-1] INFO  com.practice.SpiceJetBookTest - Round Trip is selected
+12:27:25.721 [main] INFO  com.practice.SpiceJetBookTest - Driver is intiated
+12:27:41.108 [main] ERROR com.practice.SpiceJetBookTest - Round is not selected selected
+12:27:41.239 [main] INFO  com.practice.SpiceJetBookTest - Round Trip is selected
