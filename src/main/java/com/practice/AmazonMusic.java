@@ -19,20 +19,16 @@ public class AmazonMusic {
 	@FindBy(xpath = "//div[@class='browseSection']")
 	private WebElement browseSection;
 
-	private WebElement home = browseSection.findElement(By.linkText("Home"));
-
-	private WebElement stations = browseSection.findElement(By.linkText("Stations"));
-
-	private WebElement playlists = browseSection.findElement(By.linkText("Playlists"));
-
 	@FindBy(xpath = "//input[@id='searchMusic']")
 	private WebElement searchMusic;
 
 	public WebElement home() {
+		WebElement home = browseSection.findElement(By.linkText("Home"));
 		return home;
 	}
 
 	public WebElement stations() {
+		WebElement stations = browseSection.findElement(By.linkText("Stations"));
 		return stations;
 	}
 

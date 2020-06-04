@@ -23,9 +23,11 @@ public class AmzonmusicTest extends DriverInitialization {
 
 		driver.get("https://music.amazon.in/home?ref=dm_ws_lnd_pm_listn_pm_f82420aa-88c3-44d8-940f-fd4a1f8b5d04");
 
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
 		AmazonMusicHomePage hp = new AmazonMusicHomePage(driver);
+		hp.Hello().click();
 		hp.SignIn().click();
 
 		Amazon_Login_Page lp = new Amazon_Login_Page(driver);
@@ -44,13 +46,22 @@ public class AmzonmusicTest extends DriverInitialization {
 
 			System.out.println("Authentication required in order to login");
 			System.out.println("New Change Commit");
-			
-		} else {
+
+		}
+
+		else if (driver.getTitle().contains("Sign In")) {
+
+			System.out.println("Wrong Creds Shared");
+		}
+
+		else {
 			AmazonMusic am = new AmazonMusic(driver);
 			am.searchMusic().sendKeys("SidhuMooseWala");
 			am.searchMusic().sendKeys(Keys.chord(Keys.CONTROL, Keys.ENTER));
 
 		}
+
+		driver.quit();
 	}
 
 	@DataProvider
